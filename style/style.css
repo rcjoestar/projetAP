@@ -4,38 +4,37 @@
 .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    height: 400px;
-    width: 400px;
+    justify-content: space-between;
+    margin-right: 50px;
     /* background-color: grey; */
 }
 
 .box {
     border-radius: 10px;
-    height: 250px;
-    width: 250px;
+    height: 800px;
+    width: 300px;
 }
 
-.one {
+.rc {
     background-color: black;
 }
 
-.two {
+.siliana {
     background-color: rgb(53, 53, 53);
 }
 
-.three {
+.thandie {
     background-color: rgb(116, 116, 116);
 }
 
-.four {
+.anais {
     background-color: rgb(179, 179, 179);
 }
 
-.five {
+.aissetou {
     background-color: rgb(146, 146, 146);
 }
 
-.six {
+.melissa {
     background-color: rgb(216, 216, 216);
 }
