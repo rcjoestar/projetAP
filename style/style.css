@@ -17,7 +17,12 @@
 
 .rc {
     background-color: black;
+	background-image: url("rclol.jpg"); /* chemin vers ton image */
+    background-size: cover;       /* pour que l'image remplisse bien la box */
+    background-position: center;  /* centrée */
+    cursor: pointer;
 }
+
 
 .siliana {
     background-color: rgb(53, 53, 53);
