@@ -1,0 +1,35 @@
+body {
+        font-family: 'Suse', sans-serif;
+        background-color: #8169b9;
+        color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 5rem;
+    background-color: #73619e;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.back_link {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.back_link a {
+    color: white;
+    text-decoration: underline;
+}
