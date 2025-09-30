@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+.aissetou {
+    position: relative;  /* pour positionner enfants absolus c'est le parent*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;  /*montre que c’est cliquable*/
+    border-radius: 10px;
+}
+
+.aissetou:hover {
+    background-color: #999799;
+}
+
+.fond_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: 0;
+    pointer-events: none; /*laisse passer click*/
+}
+
+.click-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.img_back {
+    opacity: 0.1;
+    width: 15rem;
+    height: 13rem;
+    transition: none; /*supprime l’animation veux pas*/
+}
+
+.no_click {
+    position: relative;
+    z-index: 2;  /*au-dessus de tout*/
+    font-family: "Ruso One", sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 1.5rem;
+    pointer-events: none;  /*click passe à travers*/
+    text-align: center;
+    margin: 0;
+}
+
+.aissetou:hover .img_back {
+    transform: scale(1.2);
+    animation: pulse 1s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}

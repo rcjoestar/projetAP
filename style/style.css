@@ -6,7 +6,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-right: 50px;
-    /* background-color: grey; */
 }
 
 .box {
@@ -16,30 +15,60 @@
 }
 
 .rc {
-    background-color: black;
-	background-image: url("image/rclol.jpg"); /* chemin vers ton image */
-    background-size: cover;       /* pour que l'image remplisse bien la box */
-    background-position: center;  /* centrée */
-    cursor: pointer;
+    overflow: hidden;
+    position: relative;
 }
 
+.rc img {
+    object-fit: cover;
+    margin-left: -50%;
+}
 
 .siliana {
-    background-color: rgb(53, 53, 53);
+    overflow: hidden;
+    position: relative;
 }
 
-.thandie {
-    background-color: rgb(116, 116, 116);
+.siliana img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
 }
 
 .anais {
-    background-color: rgb(179, 179, 179);
+    overflow: hidden;
+    position: relative;
 }
 
-.aissetou {
-    background-color: rgb(146, 146, 146);
+.anais img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+
+.thandie {
+    overflow: hidden;
+    position: relative;
+}
+
+.thandie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
 }
 
 .melissa {
-    background-color: rgb(216, 216, 216);
+    overflow: hidden;
+    position: relative;
+}
+
+.melissa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
 }
