@@ -1,1 +1,18 @@
-
+body{
+background-color:#9dd390;
+color:#c7f5f0;
+}
+p{
+color: purple;
+}
+a:hover{
+color:red;
+}
+a:active{
+color: yellow;
+}
+a:visited{
+color: green;
+}
+</style>
+</head>
