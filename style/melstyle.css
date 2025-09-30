@@ -14,5 +14,6 @@ color: yellow;
 a:visited{
 color: green;
 }
-</style>
-</head>
+justify-content: center;
+align-items: center;
+}
