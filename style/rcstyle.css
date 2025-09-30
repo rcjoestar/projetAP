@@ -1,3 +1,4 @@
+/* Styles généraux du body */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #89f7fe, #66a6ff);
@@ -6,53 +7,60 @@ body {
   padding: 20px;
 }
 
+/* Titres */
 header h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
 }
 
+/* Images rondes */
 .photo {
   width: 180px;
   height: auto;
   border-radius: 50%;
   border: 5px solid white;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Hover sur les images */
+.photo:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Titres secondaires */
 h2 {
   margin-top: 30px;
   font-size: 1.5em;
 }
 
+/* Bloc citation */
 blockquote {
   font-style: italic;
   margin-top: 20px;
   background: rgba(255,255,255,0.7);
   padding: 10px;
   border-radius: 8px;
-
-photo:hover {
-  transform: scale(1.2);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
+/* Bouton retour */
 .back-btn {
-    background-color: #4CAF50;   /* vert doux */
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+  background-color: #4CAF50;   /* vert doux */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .back-btn:hover {
-    background-color: #45a049;
-    transform: scale(1.05); /* petit zoom au hover */
+  background-color: #45a049;
+  transform: scale(1.05); /* petit zoom au hover */
 }
 
 .back-btn:active {
-    transform: scale(0.95); /* effet clic */
+  transform: scale(0.95); /* effet clic */
 }
